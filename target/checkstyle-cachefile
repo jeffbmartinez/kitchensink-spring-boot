@@ -1,0 +1,23 @@
+#Mon Sep 28 22:39:02 PDT 2026
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/service/MemberRegistration.java=1790656422250
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/main/resources/ValidationMessages_fr.properties=1790656422251
+configuration*?=687A14A7A6EF1527FA66F2DC3F2320B9E6D1FEC3
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/main/resources/org/jboss/as/quickstarts/kitchensink/bundle/Resources.properties=1790656422251
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/main/resources/org/jboss/as/quickstarts/kitchensink/bundle/Resources_es.properties=1790656422251
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/util/Resources.java=1790656422251
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/main/resources/META-INF/persistence.xml=1790656422251
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/rest/MemberResourceRESTService.java=1790656422250
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/main/resources/org/jboss/as/quickstarts/kitchensink/bundle/Resources_fr.properties=1790656422251
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/main/resources/org/jboss/as/quickstarts/kitchensink/util/KitchensinkMessages.i18n_fr.properties=1790656422252
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/main/resources/ValidationMessages_es.properties=1790656422251
+module-resource*?\:/wildfly-checkstyle/suppressions.xml=DD3FD5987C62C3034A4613F83C42B24683BCFC2E
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/rest/JaxRsActivator.java=1790656422250
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/test/java/org/jboss/as/quickstarts/kitchensink/test/MemberRegistrationIT.java=1790656422253
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/model/Member.java=1790656422250
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/data/MemberListProducer.java=1790656422250
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/test/java/org/jboss/as/quickstarts/kitchensink/test/BasicRuntimeIT.java=1790656422253
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/main/resources/org/jboss/as/quickstarts/kitchensink/util/KitchensinkMessages.i18n_es.properties=1790656422252
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/data/MemberRepository.java=1790656422250
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/controller/MemberController.java=1790656422250
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/main/resources/ValidationMessages.properties=1790656422251
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/util/KitchensinkMessages.java=1790656422251

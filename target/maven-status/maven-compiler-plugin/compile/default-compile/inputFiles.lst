@@ -1,0 +1,9 @@
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/controller/MemberController.java
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/data/MemberListProducer.java
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/data/MemberRepository.java
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/model/Member.java
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/rest/JaxRsActivator.java
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/rest/MemberResourceRESTService.java
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/service/MemberRegistration.java
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/util/KitchensinkMessages.java
+/Users/jeff/code/vibe-engineering-book/jboss-eap-quickstarts/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/util/Resources.java

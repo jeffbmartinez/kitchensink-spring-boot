@@ -1,0 +1,73 @@
+---
+title: Kitchensink architecture
+---
+flowchart TB
+    browser(["Person in a browser"])
+    client(["Other program / API client"])
+
+    subgraph server["JBoss EAP server"]
+        direction TB
+
+        subgraph frontends["Front ends"]
+            direction LR
+            page["<b>Web page</b><br/>index.xhtml + template<br/>sign-up form and member table"]
+            controller["<b>MemberController</b><br/>handles form submit,<br/>shows localized messages"]
+            rest["<b>REST API</b> /rest/members<br/>MemberResourceRESTService<br/>list · get by id · create (JSON)"]
+        end
+
+        subgraph business["Business layer"]
+            registration["<b>MemberRegistration</b><br/>registers a member<br/>in one transaction"]
+        end
+
+        subgraph data["Data layer"]
+            direction LR
+            member["<b>Member</b><br/>record + validation rules<br/>(name, unique email, phone)"]
+            repo["<b>MemberRepository</b><br/>queries: all, by id, by email"]
+            listProducer["<b>MemberListProducer</b><br/>member list for the page"]
+        end
+
+        subgraph support["Supporting pieces"]
+            direction LR
+            resources["<b>Resources</b><br/>shared DB connection + logging"]
+            i18n["<b>Localization</b><br/>EN / FR / ES text bundles"]
+            config["<b>persistence.xml + datasource</b><br/>database configuration"]
+        end
+    end
+
+    db[("In-memory H2 database<br/>dev/test only; reset on redeploy<br/>seeded by import.sql")]
+
+    browser -->|views and submits form| page
+    page --> controller
+    page -.->|reads member list| listProducer
+    client -->|HTTP + JSON| rest
+
+    controller -->|register| registration
+    rest -->|register| registration
+    rest -->|validate + check email| member
+    rest -->|read| repo
+
+    registration -->|save| member
+    registration -.->|"'member registered' event"| listProducer
+    listProducer -->|reload| repo
+
+    member --> db
+    repo --> db
+
+    controller -.-> i18n
+    resources -.-> registration
+    resources -.-> repo
+    config -.-> db
+
+    classDef actor fill:#e8f0fe,stroke:#4a6fa5,color:#1a2a44
+    classDef front fill:#e6f4ea,stroke:#3c8c5a,color:#173d26
+    classDef biz fill:#fff4e0,stroke:#c98a1a,color:#4a3208
+    classDef dat fill:#f3e8fd,stroke:#8a5cc2,color:#34204d
+    classDef sup fill:#f1f3f4,stroke:#80868b,color:#202124
+    classDef store fill:#fde8e8,stroke:#c24a4a,color:#4d1a1a
+
+    class browser,client actor
+    class page,controller,rest front
+    class registration biz
+    class member,repo,listProducer dat
+    class resources,i18n,config sup
+    class db store
